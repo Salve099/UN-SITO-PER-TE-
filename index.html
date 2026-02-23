@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dediche per la Mia Sorellina</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Comic Sans MS', 'Arial Rounded MT Bold', cursive;
+            background: linear-gradient(135deg, #FFB6D9 0%, #FFC0D9 50%, #FFD1DC 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Decorazioni di sfondo - fiori e cuori */
+        .decoration {
+            position: fixed;
+            font-size: 3em;
+            opacity: 0.3;
+            pointer-events: none;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .flower1 { top: 5%; left: 5%; animation-delay: 0s; }
+        .flower2 { top: 20%; right: 8%; animation-delay: 1s; }
+        .flower3 { bottom: 15%; left: 10%; animation-delay: 2s; }
+        .flower4 { top: 40%; right: 5%; animation-delay: 1.5s; }
+        .heart1 { top: 30%; left: 15%; animation-delay: 0.5s; }
+        .heart2 { bottom: 25%; right: 12%; animation-delay: 2.5s; }
+        .heart3 { top: 60%; left: 8%; animation-delay: 1.8s; }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 30px;
+            padding: 50px 30px;
+            box-shadow: 0 15px 50px rgba(255, 105, 180, 0.2);
+            position: relative;
+            z-index: 1;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            color: #FF69B4;
+            font-size: 2.8em;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(255, 105, 180, 0.2);
+        }
+
+        .subtitle {
+            color: #FF1493;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .age-label {
+            color: #FFB6D9;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .dediche-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .dedica {
+            background: linear-gradient(135deg, #FFE4F5 0%, #FFF0F8 100%);
+            border: 3px solid #FFB6D9;
+            border-radius: 20px;
+            padding: 25px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .dedica:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(255, 105, 180, 0.3);
+        }
+
+        .dedica-emoji {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+
+        .dedica-text {
+            color: #D91E63;
+            font-size: 1.3em;
+            line-height: 1.8;
+            font-weight: 500;
+        }
+
+        .dedica-author {
+            color: #FF69B4;
+            font-size: 1em;
+            margin-top: 12px;
+            font-style: italic;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 3px solid #FFB6D9;
+            color: #FF69B4;
+            font-size: 1.1em;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .dedica-text {
+                font-size: 1.1em;
+            }
+
+            .decoration {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Decorazioni di sfondo -->
+    <div class="decoration flower1">🌸</div>
+    <div class="decoration flower2">🌼</div>
+    <div class="decoration flower3">🌺</div>
+    <div class="decoration flower4">🌷</div>
+    <div class="decoration heart1">💖</div>
+    <div class="decoration heart2">💗</div>
+    <div class="decoration heart3">💝</div>
+
+    <div class="container">
+        <div class="header">
+            <h1>💕 Dediche Per Te 💕</h1>
+            <p class="subtitle">Sorellina Speciale</p>
+            <p class="age-label">La mia principessa di 3 anni ✨</p>
+        </div>
+
+        <div class="dediche-container">
+            <div class="dedica">
+                <div class="dedica-emoji">👧</div>
+                <p class="dedica-text">Sei il sorriso più grande della mia giornata, la mia gioia più pura!</p>
+                <p class="dedica-author">Con amore infinito</p>
+            </div>
+
+            <div class="dedica">
+                <div class="dedica-emoji">🌟</div>
+                <p class="dedica-text">Ogni giorno con te è una nuova avventura piena di ridere e abbracci!</p>
+                <p class="dedica-author">Il tuo fratello/la tua sorella</p>
+            </div>
+
+            <div class="dedica">
+                <div class="dedica-emoji">🎀</div>
+                <p class="dedica-text">Sei la prova che gli angeli esistono davvero sulla terra!</p>
+                <p class="dedica-author">Con il cuore pieno</p>
+            </div>
+
+            <div class="dedica">
+                <div class="dedica-emoji">🧸</div>
+                <p class="dedica-text">I tuoi zainetti, i tuoi giochi, il tuo riso... tutto di te è perfetto!</p>
+                <p class="dedica-author">La tua famiglia ti ama</p>
+            </div>
+
+            <div class="dedica">
+                <div class="dedica-emoji">🎈</div>
+                <p class="dedica-text">Con te ogni momento è speciale, anche le piccole cose diventano magiche!</p>
+                <p class="dedica-author">Sempre per te</p>
+            </div>
+
+            <div class="dedica">
+                <div class="dedica-emoji">🌈</div>
+                <p class="dedica-text">Sei il mio arcobaleno dopo la pioggia, la luce nei momenti scuri!</p>
+                <p class="dedica-author">Con amore eterno</p>
+            </div>
+
+            <div class="dedica">
+                <div class="dedica-emoji">🍯</div>
+                <p class="dedica-text">Dolce come il miele, bella come un fiore, preziosa come l'oro!</p>
+                <p class="dedica-author">Il tuo cuore che batte per te</p>
+            </div>
+
+            <div class="dedica">
+                <div class="dedica-emoji">⭐</div>
+                <p class="dedica-text">Grazie di farmi sorridere quando meno me lo aspetto, sei il mio tesoro!</p>
+                <p class="dedica-author">Per sempre la mia stella</p>
+            </div>
+
+            <div class="dedica">
+                <div class="dedica-emoji">🦋</div>
+                <p class="dedica-text">Leggera come una farfalla, dolce come il profumo dei fiori di primavera!</p>
+                <p class="dedica-author">Con lo sguardo pieno d'amore</p>
+            </div>
+
+            <div class="dedica">
+                <div class="dedica-emoji">🎶</div>
+                <p class="dedica-text">La mia canzone preferita è il tuo riso, la melodia più bella che conosca!</p>
+                <p class="dedica-author">Musicata dal mio cuore</p>
+            </div>
+
+            <div class="dedica">
+                <div class="dedica-emoji">🌸</div>
+                <p class="dedica-text">Sei il fiore più bello del giardino della mia vita, protetto con tutto l'amore!</p>
+                <p class="dedica-author">Sempre al tuo fianco</p>
+            </div>
+
+            <div class="dedica">
+                <div class="dedica-emoji">💝</div>
+                <p class="dedica-text">Non importa quanti anni passino, tu rimarrai sempre il mio cuoricino!</p>
+                <p class="dedica-author">Con amore infinito e senza fine</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>💖 Un sito pieno d'amore per la persona più speciale 💖</p>
+            <p style="margin-top: 15px; font-size: 0.9em;">Creato con tutto il cuore nel 2026 ✨</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -54,6 +54,16 @@
             50% { opacity: 0.8; transform: scale(1.2); }
         }
 
+        @keyframes gentle-pulse {
+            0%, 100% { transform: scale(1) rotate(0deg); opacity: 1; }
+            50% { transform: scale(1.08) rotate(2deg); opacity: 0.9; }
+        }
+
+        .heart-title {
+            display: inline-block;
+            animation: gentle-pulse 2s ease-in-out infinite;
+        }
+
         .container {
             max-width: 800px;
             margin: 0 auto;
@@ -176,6 +186,21 @@
             border-style: dashed;
         }
 
+        .dedica-image {
+            width: 100%;
+            height: 200px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            object-fit: cover;
+            border: 4px solid #FFB6D9;
+            box-shadow: 0 5px 15px rgba(255, 105, 180, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .dedica:hover .dedica-image {
+            transform: scale(1.05);
+        }
+
         .dedica::before {
             content: '';
             position: absolute;
@@ -274,12 +299,13 @@
 
     <div class="container">
         <div class="header">
-            <h1>💕 Dediche Per Violante 💕</h1>
+            <h1><span class="heart-title">💕</span> Dediche Per Violante <span class="heart-title">💕</span></h1>
             <p class="subtitle">Sorellina Speciale</p>
         </div>
 
         <div class="dediche-container">
             <div class="dedica">
+                <img src="https://images.unsplash.com/photo-1578089141422-e3d685c12a1f?w=400&h=300&fit=crop" alt="Sorella felice" class="dedica-image">
                 <p class="dedica-decoration">🌸 💖 🌸</p>
                 <p class="dedica-text">Sei il sorriso più grande della mia giornata, la mia gioia più pura!</p>
                 <p class="dedica-decoration">💕 ✨ 💕</p>
@@ -287,6 +313,7 @@
             </div>
 
             <div class="dedica">
+                <img src="https://images.unsplash.com/photo-1516627145497-ae6ddf007cf2?w=400&h=300&fit=crop" alt="Sorella che gioca" class="dedica-image">
                 <p class="dedica-decoration">🌼 💗 🌼</p>
                 <p class="dedica-text">Ogni giorno con te è una nuova avventura piena di ridere e abbracci!</p>
                 <p class="dedica-decoration">💖 ✨ 💖</p>
@@ -294,6 +321,7 @@
             </div>
 
             <div class="dedica">
+                <img src="https://images.unsplash.com/photo-1503454537688-e47a1d14b746?w=400&h=300&fit=crop" alt="Bambini felici" class="dedica-image">
                 <p class="dedica-decoration">🌺 💝 🌺</p>
                 <p class="dedica-text">Sei la prova che gli angeli esistono davvero sulla terra!</p>
                 <p class="dedica-decoration">❤️ ✨ ❤️</p>
@@ -301,20 +329,21 @@
             </div>
 
             <div class="dedica">
+                <img src="https://images.unsplash.com/photo-1530268729831-4b51b1acda11?w=400&h=300&fit=crop" alt="Sorella che ride" class="dedica-image">
                 <p class="dedica-decoration">🌸 💗 🌸</p>
                 <p class="dedica-text">I tuoi zainetti, i tuoi giochi, il tuo riso... tutto di te è perfetto!</p>
                 <p class="dedica-decoration">💕 ✨ 💕</p>
                 <p class="dedica-author">La tua famiglia ti ama</p>
             </div>
 
-            <div class="dedica">
-                <p class="dedica-decoration">🌸 💖 🌸</p>
+            <div class="dedica">                <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=400&h=300&fit=crop" alt="Fratello e sorella" class="dedica-image">                <p class="dedica-decoration">🌸 💖 🌸</p>
                 <p class="dedica-text">Con te ogni momento è speciale, anche le piccole cose diventano magiche!</p>
                 <p class="dedica-decoration">💗 ✨ 💗</p>
                 <p class="dedica-author">Sempre per te</p>
             </div>
 
             <div class="dedica">
+                <img src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?w=400&h=300&fit=crop" alt="Famiglia felice" class="dedica-image">
                 <p class="dedica-decoration">🌼 💝 🌼</p>
                 <p class="dedica-text">Sei il mio arcobaleno dopo la pioggia, la luce nei momenti scuri!</p>
                 <p class="dedica-decoration">💖 ✨ 💖</p>
@@ -322,41 +351,39 @@
             </div>
 
             <div class="dedica">
+                <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400&h=300&fit=crop" alt="Bambina sorridente" class="dedica-image">
                 <p class="dedica-decoration">🌺 💗 🌺</p>
                 <p class="dedica-text">Dolce come il miele, bella come un fiore, preziosa come l'oro!</p>
                 <p class="dedica-decoration">❤️ ✨ ❤️</p>
                 <p class="dedica-author">Il tuo cuore che batte per te</p>
             </div>
 
-            <div class="dedica">
-                <p class="dedica-decoration">🌷 💝 🌷</p>
+            <div class="dedica">                <img src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400&h=300&fit=crop" alt="Due bambini" class="dedica-image">                <p class="dedica-decoration">🌷 💝 🌷</p>
                 <p class="dedica-text">Grazie di farmi sorridere quando meno me lo aspetto, sei il mio tesoro!</p>
                 <p class="dedica-decoration">💕 ✨ 💕</p>
                 <p class="dedica-author">Per sempre la mia stella</p>
             </div>
 
-            <div class="dedica">
-                <p class="dedica-decoration">🌸 💖 🌸</p>
+            <div class="dedica">                <img src="https://images.unsplash.com/photo-1503454537688-e47a1d14b746?w=400&h=300&fit=crop" alt="Bambini che giocano" class="dedica-image">                <p class="dedica-decoration">🌸 💖 🌸</p>
                 <p class="dedica-text">Leggera come una farfalla, dolce come il profumo dei fiori di primavera!</p>
                 <p class="dedica-decoration">💗 ✨ 💗</p>
                 <p class="dedica-author">Con lo sguardo pieno d'amore</p>
             </div>
 
-            <div class="dedica">
-                <p class="dedica-decoration">🌼 💗 🌼</p>
+            <div class="dedica">                <img src="https://images.unsplash.com/photo-1516627145497-ae6ddf007cf2?w=400&h=300&fit=crop" alt="Sorella con fratello" class="dedica-image">                <p class="dedica-decoration">🌼 💗 🌼</p>
                 <p class="dedica-text">La mia canzone preferita è il tuo riso, la melodia più bella che conosca!</p>
                 <p class="dedica-decoration">💝 ✨ 💝</p>
                 <p class="dedica-author">Musicata dal mio cuore</p>
             </div>
 
-            <div class="dedica">
-                <p class="dedica-decoration">🌺 💖 🌺</p>
+            <div class="dedica">                <img src="https://images.unsplash.com/photo-1578089141422-e3d685c12a1f?w=400&h=300&fit=crop" alt="Bambina felice" class="dedica-image">                <p class="dedica-decoration">🌺 💖 🌺</p>
                 <p class="dedica-text">Sei il fiore più bello del giardino della mia vita, protetto con tutto l'amore!</p>
                 <p class="dedica-decoration">❤️ ✨ ❤️</p>
                 <p class="dedica-author">Sempre al tuo fianco</p>
             </div>
 
             <div class="dedica">
+                <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=400&h=300&fit=crop" alt="Fratello e sorella felici" class="dedica-image">
                 <p class="dedica-decoration">🌸 💝 🌸</p>
                 <p class="dedica-text">Non importa quanti anni passino, tu rimarrai sempre il mio cuoricino!</p>
                 <p class="dedica-decoration">💕 ✨ 💕</p>

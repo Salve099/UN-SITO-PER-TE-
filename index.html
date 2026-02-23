@@ -18,7 +18,7 @@
             padding: 40px 20px;
             position: relative;
             overflow-x: hidden;
-            animation: gradientFlow 20s ease infinite;
+            animation: gradientFlow 60s ease-in-out infinite;
         }
 
         /* Decorazioni di sfondo - fiori e cuori */
@@ -51,21 +51,27 @@
         }
 
         @keyframes gradientFlow {
-            0% {
-                background: linear-gradient(135deg, #FFB6D9 0%, #E8A8D8 50%, #C899C6 100%);
-            }
-            25% {
-                background: linear-gradient(45deg, #E8A8D8 0%, #C899C6 50%, #D99DCF 100%);
-            }
-            50% {
-                background: linear-gradient(135deg, #C899C6 0%, #D99DCF 50%, #FFB6D9 100%);
-            }
-            75% {
-                background: linear-gradient(45deg, #D99DCF 0%, #FFB6D9 50%, #E8A8D8 100%);
-            }
-            100% {
-                background: linear-gradient(135deg, #FFB6D9 0%, #E8A8D8 50%, #C899C6 100%);
-            }
+            0% { background: linear-gradient(135deg, #FFB6D9 0%, #E8A8D8 50%, #C899C6 100%); }
+            5% { background: linear-gradient(135deg, #FF99CC 0%, #E8A8D8 50%, #C899C6 100%); }
+            10% { background: linear-gradient(135deg, #FF6699 0%, #E8A8D8 50%, #C899C6 100%); }
+            15% { background: linear-gradient(135deg, #FF3366 0%, #E8A8D8 50%, #B366B3 100%); }
+            20% { background: linear-gradient(135deg, #FF0099 0%, #CC33FF 50%, #9933CC 100%); }
+            25% { background: linear-gradient(135deg, #E6006B 0%, #B333FF 50%, #7722AA 100%); }
+            30% { background: linear-gradient(135deg, #CC0066 0%, #9933FF 50%, #663399 100%); }
+            35% { background: linear-gradient(135deg, #B30066 0%, #9966FF 50%, #7755AA 100%); }
+            40% { background: linear-gradient(135deg, #A00066 0%, #9999FF 50%, #8899BB 100%); }
+            45% { background: linear-gradient(135deg, #9933CC 0%, #B388D1 50%, #997BAA 100%); }
+            50% { background: linear-gradient(135deg, #9966FF 0%, #C899C6 50%, #A080B0 100%); }
+            55% { background: linear-gradient(135deg, #AA77FF 0%, #D99DCF 50%, #B08888 100%); }
+            60% { background: linear-gradient(135deg, #BB88FF 0%, #E8A8D8 50%, #C899C6 100%); }
+            65% { background: linear-gradient(135deg, #CC99FF 0%, #F0B3E0 50%, #D99DCF 100%); }
+            70% { background: linear-gradient(135deg, #DD99FF 0%, #F5BBEB 50%, #E8A8D8 100%); }
+            75% { background: linear-gradient(135deg, #EE99FF 0%, #FFBBDD 50%, #F0B3E0 100%); }
+            80% { background: linear-gradient(135deg, #FF99FF 0%, #FFB6D9 50%, #F5BBEB 100%); }
+            85% { background: linear-gradient(135deg, #FF88DD 0%, #FFB6D9 50%, #E8A8D8 100%); }
+            90% { background: linear-gradient(135deg, #FF88CC 0%, #FFB6D9 50%, #D99DCF 100%); }
+            95% { background: linear-gradient(135deg, #FF88BB 0%, #E8A8D8 50%, #C899C6 100%); }
+            100% { background: linear-gradient(135deg, #FFB6D9 0%, #E8A8D8 50%, #C899C6 100%); }
         }
 
         @keyframes pulse {

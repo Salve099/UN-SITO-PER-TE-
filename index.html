@@ -13,11 +13,12 @@
 
         body {
             font-family: 'Comic Sans MS', 'Arial Rounded MT Bold', cursive;
-            background: linear-gradient(135deg, #FFB6D9 0%, #E8A8D8 50%, #C899C6 100%);
+            background-size: 100% 100%;
             min-height: 100vh;
             padding: 40px 20px;
             position: relative;
             overflow-x: hidden;
+            animation: gradientFlow 20s ease infinite;
         }
 
         /* Decorazioni di sfondo - fiori e cuori */
@@ -47,6 +48,24 @@
         @keyframes float {
             0%, 100% { transform: translateY(0px); }
             50% { transform: translateY(-20px); }
+        }
+
+        @keyframes gradientFlow {
+            0% {
+                background: linear-gradient(135deg, #FFB6D9 0%, #E8A8D8 50%, #C899C6 100%);
+            }
+            25% {
+                background: linear-gradient(45deg, #E8A8D8 0%, #C899C6 50%, #D99DCF 100%);
+            }
+            50% {
+                background: linear-gradient(135deg, #C899C6 0%, #D99DCF 50%, #FFB6D9 100%);
+            }
+            75% {
+                background: linear-gradient(45deg, #D99DCF 0%, #FFB6D9 50%, #E8A8D8 100%);
+            }
+            100% {
+                background: linear-gradient(135deg, #FFB6D9 0%, #E8A8D8 50%, #C899C6 100%);
+            }
         }
 
         @keyframes pulse {
